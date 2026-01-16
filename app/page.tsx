@@ -80,20 +80,24 @@ export default function Home() {
             
             {/* UPDATED: Forced Max Height constraint (420px) to prevent scrolling */}
             <div className="flex flex-col items-center w-full max-w-[480px]">
-                <div className="relative w-full h-[420px] rounded-2xl overflow-hidden shadow-2xl shadow-secondary/10 rotate-2 hover:rotate-0 transition-transform duration-700 ease-out bg-[#F3F4F6]">
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-secondary/10 z-10 mix-blend-multiply"></div>
-                  <img 
-                      src="/images/Web3JatinCharacter.png" 
-                      alt="Web3 Jatin Character" 
-                      className="w-full h-full object-contain object-top"
-                  />
-                </div>
-                
-                <div className="mt-4 text-center">
-                    <h3 className="text-base font-semibold text-secondary">Jatin Saini</h3>
-                    <p className="text-sm text-body-text">Token Launch & CEX Listing Strategist</p>
-                </div>
-            </div>
+    {/* FIX 1: Changed h-[420px] to h-[320px] md:h-[420px] */}
+    {/* This makes the card shorter on mobile to remove empty space, but keeps it tall on desktop */}
+    <div className="relative w-full h-[320px] md:h-[420px] rounded-2xl overflow-hidden shadow-2xl shadow-secondary/10 rotate-2 hover:rotate-0 transition-transform duration-700 ease-out bg-[#F3F4F6]">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-secondary/10 z-10 mix-blend-multiply"></div>
+        <img 
+            src="/images/Web3JatinCharacter.png" 
+            alt="Web3 Jatin Character" 
+            // FIX 2: Changed object-top to object-bottom md:object-top
+            // This anchors the character to the bottom on mobile (so no floating), but keeps top alignment on desktop
+            className="w-full h-full object-contain object-bottom md:object-top"
+        />
+    </div>
+    
+    <div className="mt-4 text-center">
+        <h3 className="text-base font-semibold text-secondary">Jatin Saini</h3>
+        <p className="text-sm text-body-text">Token Launch & CEX Listing Strategist</p>
+    </div>
+</div>
           </div>
         </div>
       </section>
