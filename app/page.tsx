@@ -536,7 +536,7 @@ I don’t push unnecessary listings or services - only strategy and execution al
               <div className="w-80 h-80 relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary to-transparent opacity-20 rounded-full animate-pulse"></div>
                 <img 
-                  src="/images/Web3JatinCharacter.png" 
+                  src="/images/token-launch.png" 
                   alt="Web3 Strategy" 
                   className="w-full h-full object-cover rounded-2xl shadow-2xl -rotate-6 border border-white/10 mix-blend-lighten" 
                 />
