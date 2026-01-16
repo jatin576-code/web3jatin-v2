@@ -133,12 +133,12 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-secondary mb-3 group-hover:text-[#013E48]">Token Structuring</h3>
               <p className="text-body-text text-lg leading-relaxed mb-6">
-                Tokenomics, vesting, and sale structure designed for sustainable price discovery, not short-term pumps.
+                Token structure, vesting, and sale structure designed for sustainable price discovery (not short-term pumps).
               </p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-3 text-sm font-medium text-secondary/80">
                   <span className="material-symbols-outlined text-primary text-lg">check_circle</span>
-                  Tokenomics Review
+                  Tokenomics Refinement
                 </li>
                 <li className="flex items-center gap-3 text-sm font-medium text-secondary/80">
                   <span className="material-symbols-outlined text-primary text-lg">check_circle</span>
@@ -437,11 +437,9 @@ What I can do is maximize your probability by preparing the right strategy, sequ
   </summary>
 
   <div className="px-6 pb-6 pt-0 text-body-text leading-relaxed">
+  I charge a one-time upfront fee for token launch strategy + execution coordination.
 
-    I charge a one-time fee for strategy and execution support around your token launch.
-
-For additional outcomes, I also include a success fee tied to KPIs like successful fundraising and Tier-1 exchange listings.
-
+For outcome-based work (like fundraising or Tier-1 CEX listings), I charge a success fee only if the result is delivered.
   </div>
 
 </details>
