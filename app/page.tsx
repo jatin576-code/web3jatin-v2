@@ -443,7 +443,7 @@ What I can do is maximize your probability by preparing the right strategy, sequ
   </summary>
 
   <div className="px-6 pb-6 pt-0 text-body-text leading-relaxed">
-  I charge a monthly retainer for for token launch strategy and execution support.
+  I charge a monthly retainer for token launch strategy and execution support.
 
 For outcome-based work (like fundraising or Tier-1 CEX listings), I charge a success fee only if the result is delivered.
   </div>
