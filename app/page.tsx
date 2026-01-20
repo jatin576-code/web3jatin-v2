@@ -54,12 +54,14 @@ export default function Home() {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-secondary leading-[1.1] tracking-tight">
-              Token Launch & <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-[#2C6E7A]">CEX Listing</span> Strategy
-            </h1>
+  Token Launch <br />
+  <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-[#2C6E7A] whitespace-nowrap">
+    Strategy & Execution
+  </span>
+</h1>
             
             <p className="text-lg md:text-xl text-body-text max-w-xl leading-relaxed">
-              I help Web3 projects design and execute token launches that survive post-TGE.
+              I help Web3 founders design and execute token launches that survive post-TGE.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-1">
