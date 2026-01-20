@@ -158,7 +158,7 @@ export default function Home() {
               <div className="w-14 h-14 rounded-xl bg-[#E6F5FC] text-secondary flex items-center justify-center mb-6 transition-colors duration-300 group-hover:bg-primary group-hover:text-secondary">
                 <span className="material-symbols-outlined text-3xl">account_balance</span>
               </div>
-              <h3 className="text-2xl font-bold text-secondary mb-3 group-hover:text-[#013E48]">Strategic CEX Listings</h3>
+              <h3 className="text-2xl font-bold text-secondary mb-3 group-hover:text-[#013E48]">Strategic Exchange Listings</h3>
               <p className="text-body-text text-lg leading-relaxed mb-6">
                 Helping you list your token on the right exchanges at the right time according to your users, liquidity and stage.
               </p>
