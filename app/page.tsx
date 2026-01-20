@@ -97,7 +97,7 @@ export default function Home() {
     
     <div className="mt-4 text-center">
         <h3 className="text-base font-semibold text-secondary">Jatin Saini</h3>
-        <p className="text-sm text-body-text">Token Launch & CEX Listing Strategist</p>
+        <p className="text-sm text-body-text">Token Launch Strategist</p>
     </div>
 </div>
           </div>
@@ -280,7 +280,7 @@ export default function Home() {
                 <span className="material-symbols-outlined text-2xl">engineering</span>
               </div>
               <div>
-                <h4 className="text-xl font-bold text-secondary mb-3">Execution Support</h4>
+                <h4 className="text-xl font-bold text-secondary mb-3">Execution Oversight</h4>
                 <p className="text-body-text text-base leading-relaxed">I coordinate execution with precision, managing vendors and partners so you can focus on building the product.</p>
               </div>
             </div>
@@ -310,7 +310,7 @@ export default function Home() {
                 <span className="material-symbols-outlined text-2xl">swap_vert</span>
               </div>
               <div>
-                <h4 className="text-xl font-bold text-secondary mb-3">CEX Sequencing</h4>
+                <h4 className="text-xl font-bold text-secondary mb-3">Exchange Sequencing</h4>
                 <p className="text-body-text text-base leading-relaxed">I help you list on the right exchanges at the right time - no vanity listings, no wasted fees, just high quality listings that actually make sense.</p>
               </div>
             </div>
@@ -443,7 +443,7 @@ What I can do is maximize your probability by preparing the right strategy, sequ
   </summary>
 
   <div className="px-6 pb-6 pt-0 text-body-text leading-relaxed">
-  I charge a one-time upfront fee for token launch strategy + execution coordination.
+  I charge a monthly retainer for for token launch strategy and execution support.
 
 For outcome-based work (like fundraising or Tier-1 CEX listings), I charge a success fee only if the result is delivered.
   </div>
@@ -524,7 +524,7 @@ I don’t push unnecessary listings or services - only strategy and execution al
                 Ready to <span className="text-primary">Launch?</span>
               </h2>
               <p className="text-white/80 text-lg md:text-xl max-w-md">
-                Let's discuss how we can structure your token launch & CEX listing strategy for maximum impact.
+                Let's discuss how we can structure your token launch for maximum impact and post-TGE survival.
               </p>
               <Link 
                 href="https://calendly.com/web3jatin"
