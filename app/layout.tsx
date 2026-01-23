@@ -5,8 +5,12 @@ import "./globals.css";
 const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Web3 Jatin - Token Launch & CEX Strategy",
-  description: "Strategic advisory for Web3 projects seeking sustainable liquidity.",
+  metadataBase: new URL('https://web3jatin.com'),
+  title: "Token Launch Strategy & Execution | Web3 Jatin",
+  description: "Helping Web3 founders design and execute token launches that survive post-TGE. Strategy, listings, and liquidity planning.",
+  icons: {
+    icon: '/images/Web3Jatinlogo.jpg',
+  },
 };
 
 export default function RootLayout({
@@ -21,8 +25,8 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
       </head>
       <body className={`${manrope.className} bg-background-light text-secondary`}>
-  {children}
-</body>
+        {children}
+      </body>
     </html>
   );
 }
