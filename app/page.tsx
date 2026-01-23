@@ -179,7 +179,7 @@ export default function Home() {
               <div className="w-14 h-14 rounded-xl bg-[#E6F5FC] text-secondary flex items-center justify-center mb-6 transition-colors duration-300 group-hover:bg-primary group-hover:text-secondary">
                 <span className="material-symbols-outlined text-3xl">water_drop</span>
               </div>
-              <h3 className="text-2xl font-bold text-secondary mb-3 group-hover:text-[#013E48]">Liquidity Management</h3>
+              <h3 className="text-2xl font-bold text-secondary mb-3 group-hover:text-[#013E48]">Liquidity Strategy</h3>
               <p className="text-body-text text-lg leading-relaxed mb-6">
                 Fundamental liquidity planning to help you choose the right market maker, the right MM model, and the right amount of liquidity for the right exchanges.
               </p>
@@ -213,7 +213,7 @@ export default function Home() {
               <div className="w-12 h-12 rounded-lg bg-background-light text-secondary flex items-center justify-center mb-4">
                 <span className="material-symbols-outlined text-2xl">search</span>
               </div>
-              <h4 className="text-xl font-bold text-secondary mb-3">Project Review</h4>
+              <h4 className="text-xl font-bold text-secondary mb-3">Review</h4>
               <p className="text-body-text text-sm leading-relaxed">
                 You submit your project details for review. I assess fundamentals, token readiness, timelines, and requirements, followed by a discovery call to confirm alignment and scope.
               </p>
@@ -224,9 +224,9 @@ export default function Home() {
               <div className="w-12 h-12 rounded-lg bg-background-light text-secondary flex items-center justify-center mb-4">
                 <span className="material-symbols-outlined text-2xl">architecture</span>
               </div>
-              <h4 className="text-xl font-bold text-secondary mb-3">Strategy Blueprint</h4>
+              <h4 className="text-xl font-bold text-secondary mb-3">Strategy</h4>
               <p className="text-body-text text-sm leading-relaxed">
-                You receive a clear, execution-ready blueprint covering token structure, listings, liquidity planning, launch sequencing, and key coordination points tailored to your project stage.
+                You receive a clear, execution-ready strategy covering token structure, listings, liquidity planning, launch sequencing, and key coordination points tailored to your project stage.
               </p>
             </div>
 
