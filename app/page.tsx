@@ -1,7 +1,14 @@
+'use client';
+import { useState } from 'react';
 import React from 'react';
 import Link from 'next/link';
 
 export default function Home() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
   return (
     // MAIN HOMEPAGE COMPONENT
     <main className="bg-background-light text-secondary font-sans antialiased selection:bg-primary selection:text-secondary">
@@ -24,6 +31,10 @@ export default function Home() {
             <Link href="#process" className="text-sm font-semibold text-secondary/80 hover:text-secondary hover:underline decoration-primary decoration-2 underline-offset-4 transition-all">Process</Link>
             <Link href="#whyme" className="text-sm font-semibold text-secondary/80 hover:text-secondary hover:underline decoration-primary decoration-2 underline-offset-4 transition-all">Why Me</Link>
             <Link href="#faq" className="text-sm font-semibold text-secondary/80 hover:text-secondary hover:underline decoration-primary decoration-2 underline-offset-4 transition-all">FAQ</Link>
+            <Link href="/launchlab" className="text-sm font-extrabold text-secondary hover:underline decoration-primary decoration-2 underline-offset-4 transition-all flex items-center gap-1">
+              Launch Lab
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            </Link>
           </div>
           
           <Link 
@@ -35,11 +46,59 @@ export default function Home() {
             <span className="material-symbols-outlined text-[18px]">calendar_today</span>
           </Link>
           
-          <button className="md:hidden text-secondary">
+          <button 
+            className="md:hidden text-secondary cursor-pointer" 
+            onClick={toggleMobileMenu}
+            aria-label="Toggle mobile menu"
+          >
             <span className="material-symbols-outlined">menu</span>
           </button>
         </div>
       </nav>
+      {/* Mobile Menu Overlay */}
+      <div 
+        className={`fixed inset-0 bg-secondary/80 backdrop-blur-sm z-[100] transition-opacity duration-300 md:hidden ${isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+        onClick={toggleMobileMenu}
+      >
+        <div 
+          className={`absolute right-0 top-0 bottom-0 w-[80%] max-w-[320px] bg-background-light p-8 shadow-2xl flex flex-col transition-transform duration-300 ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+          onClick={(e) => e.stopPropagation()} 
+        >
+          {/* Header */}
+          <div className="flex items-center justify-between mb-12">
+            <Link href="#hero" className="flex items-center gap-2" onClick={toggleMobileMenu}>
+              <img src="/images/Web3Jatinlogo.jpg" alt="Web3 Jatin Logo" className="h-8 w-8 rounded-full object-cover" />
+              <span className="text-secondary font-bold text-lg tracking-tight">Web3 Jatin</span>
+            </Link>
+            <button className="text-secondary" onClick={toggleMobileMenu}>
+              <span className="material-symbols-outlined">close</span>
+            </button>
+          </div>
+
+          {/* Links */}
+          <div className="flex flex-col gap-6 text-xl font-medium">
+            <Link href="#services" className="text-secondary hover:text-primary transition-colors" onClick={toggleMobileMenu}>Services</Link>
+            <Link href="#process" className="text-secondary hover:text-primary transition-colors" onClick={toggleMobileMenu}>Process</Link>
+            <Link href="#whyme" className="text-secondary hover:text-primary transition-colors" onClick={toggleMobileMenu}>Why Me</Link>
+            <Link href="#faq" className="text-secondary hover:text-primary transition-colors" onClick={toggleMobileMenu}>FAQ</Link>
+            <Link href="/launchlab" className="text-secondary font-extrabold flex items-center gap-2 hover:text-primary transition-colors" onClick={toggleMobileMenu}>
+              Launch Lab <span className="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+            </Link>
+          </div>
+
+          {/* CTA */}
+          <div className="mt-auto pt-10">
+            <Link 
+              href="https://calendly.com/web3jatin" 
+              target="_blank"
+              className="w-full flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-secondary text-white font-bold text-lg hover:bg-[#013E48] transition-all duration-300 shadow-glow"
+              onClick={toggleMobileMenu}
+            >
+              Book Call <span className="material-symbols-outlined text-[20px]">calendar_today</span>
+            </Link>
+          </div>
+        </div>
+      </div>
 
       {/* Hero Section */}
       {/* Updated: Tighter padding so everything fits above the fold */}
@@ -76,30 +135,28 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Hero Image */}
+         {/* Hero Image */}
           <div className="relative order-1 lg:order-2 flex justify-center lg:justify-end">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-primary/20 to-transparent rounded-full blur-3xl -z-10"></div>
             
-            {/* UPDATED: Forced Max Height constraint (420px) to prevent scrolling */}
             <div className="flex flex-col items-center w-full max-w-[480px]">
-    {/* FIX 1: Changed h-[420px] to h-[320px] md:h-[420px] */}
-    {/* This makes the card shorter on mobile to remove empty space, but keeps it tall on desktop */}
-    <div className="relative w-full h-[320px] md:h-[420px] rounded-2xl overflow-hidden shadow-2xl shadow-secondary/10 rotate-2 hover:rotate-0 transition-transform duration-700 ease-out bg-[#F3F4F6]">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-secondary/10 z-10 mix-blend-multiply"></div>
-        <img 
-            src="/images/Web3JatinCharacter.png" 
-            alt="Web3 Jatin Character" 
-            // FIX 2: Changed object-top to object-bottom md:object-top
-            // This anchors the character to the bottom on mobile (so no floating), but keeps top alignment on desktop
-            className="w-full h-full object-contain object-bottom md:object-top"
-        />
-    </div>
-    
-    <div className="mt-4 text-center">
-        <h3 className="text-base font-semibold text-secondary">Jatin Saini</h3>
-        <p className="text-sm text-body-text">Token Launch Strategist</p>
-    </div>
-</div>
+                {/* Removed rotation and hover effects for a static, grounded card */}
+                <div className="relative w-full h-[320px] md:h-[420px] rounded-2xl overflow-hidden shadow-2xl shadow-secondary/20 bg-secondary">
+                    {/* Dark inner gradient for depth */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50 z-10 pointer-events-none"></div>
+                    
+                    <img 
+                        src="/images/real-jatin.png" 
+                        alt="Jatin Saini - Web3 Strategist" 
+                        className="w-full h-full object-contain object-bottom md:object-top relative z-20"
+                    />
+                </div>
+                
+                <div className="mt-4 text-center">
+                    <h3 className="text-base font-semibold text-secondary">Jatin Saini</h3>
+                    <p className="text-sm text-body-text">Token Launch Strategist</p>
+                </div>
+            </div>
           </div>
         </div>
       </section>
@@ -139,16 +196,16 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-secondary mb-3 group-hover:text-[#013E48]">Token Structuring</h3>
               <p className="text-body-text text-lg leading-relaxed mb-6">
-                Token structure, vesting, and sale structure designed for sustainable price discovery (not short-term pumps).
+                Token structure designed for sustainable price discovery and long-term growth (not short-term pumps).
               </p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-3 text-sm font-medium text-secondary/80">
                   <span className="material-symbols-outlined text-primary text-lg">check_circle</span>
-                  Tokenomics Refinement
+                  Tokenomics + Token Utility
                 </li>
                 <li className="flex items-center gap-3 text-sm font-medium text-secondary/80">
                   <span className="material-symbols-outlined text-primary text-lg">check_circle</span>
-                  Token Sale Structure + Launchpad Planning
+                  Token Sale Structure + Launchpad Strategy
                 </li>
               </ul>
             </div>
@@ -443,9 +500,10 @@ What I can do is maximize your probability by preparing the right strategy, sequ
   </summary>
 
   <div className="px-6 pb-6 pt-0 text-body-text leading-relaxed">
-  I charge a monthly retainer for token launch strategy and execution support.
-
-For outcome-based work (like fundraising or Tier-1 CEX listings), I charge a success fee only if the result is delivered.
+  I work on a hybrid model depending on the scope :
+ • A one-time fixed fee for token launch strategy (complete deliverable)
+ • A monthly retainer for ongoing execution and support (if needed)
+ • A success fee for outcome-based work like fundraising and Tier 1 CEX listings - only charged when results are delivered
   </div>
 
 </details>
@@ -575,12 +633,14 @@ I don’t push unnecessary listings or services - only strategy and execution al
               <Link href="#process" className="text-body-text hover:text-secondary transition-colors">Process</Link>
               <Link href="#whyme" className="text-body-text hover:text-secondary transition-colors">Why Me</Link>
               <Link href="#faq" className="text-body-text hover:text-secondary transition-colors">FAQ</Link>
+              <Link href="/launchlab" className="text-primary hover:text-secondary transition-colors font-bold">Launch Lab</Link>
             </div>
             <div className="flex flex-col gap-4">
               <h4 className="text-secondary font-bold uppercase tracking-wider text-sm">Socials</h4>
               <Link href="https://x.com/web3jatin" target="_blank" className="text-body-text hover:text-secondary transition-colors">Twitter / X</Link>
               <Link href="https://www.linkedin.com/in/web3jatin/" target="_blank" className="text-body-text hover:text-secondary transition-colors">LinkedIn</Link>
               <Link href="https://t.me/web3jatin2" target="_blank" className="text-body-text hover:text-secondary transition-colors">Telegram</Link>
+              <Link href="https://www.youtube.com/@web3jatin" target="_blank" className="text-body-text hover:text-secondary transition-colors">YouTube</Link>
               <Link href="mailto:jatin@web3jatin.com" className="text-body-text hover:text-secondary transition-colors">Email</Link>
             </div>
             <div className="flex flex-col gap-4">
