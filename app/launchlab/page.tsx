@@ -29,14 +29,7 @@ export default function LaunchLab() {
             <a href="#program-details" className="text-sm font-semibold text-secondary/80 hover:text-secondary hover:underline decoration-primary decoration-2 underline-offset-4 transition-all">Program Details</a>
           </div>
           
-          <a 
-            href="https://tally.so/r/Me5xpE" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden md:flex items-center gap-2 px-6 py-2.5 rounded-full bg-secondary text-white font-bold text-sm hover:bg-[#013E48] transition-all duration-300 shadow-glow"
-          >
-            Apply Now
-          </a>
+  
           
           <button 
             className="md:hidden text-secondary cursor-pointer" 
@@ -77,17 +70,7 @@ export default function LaunchLab() {
           </div>
 
           {/* CTA */}
-          <div className="mt-auto pt-10">
-            <a 
-              href="https://tally.so/r/Me5xpE" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-secondary text-white font-bold text-lg hover:bg-[#013E48] transition-all duration-300 shadow-glow"
-              onClick={toggleMobileMenu}
-            >
-              Apply Now
-            </a>
-          </div>
+          
         </div>
       </div>
 
@@ -111,14 +94,9 @@ export default function LaunchLab() {
             4-week Token Launch Strategy & Execution program for Pre-TGE Web3 Projects
           </p>
           
-          <a 
-            href="https://tally.so/r/Me5xpE"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 px-10 py-4 rounded-xl bg-[#00FFFF] text-secondary font-black text-xl uppercase border-[3px] border-secondary hover:-translate-y-1 hover:shadow-[0_8px_0_0_#013E48] transition-all duration-200"
-          >
-            Apply Now
-          </a>
+          <div className="mt-4 px-10 py-4 rounded-xl bg-secondary/10 border-[3px] border-secondary/20 text-secondary font-black text-xl uppercase tracking-wide">
+            Q2 Applications Closed
+          </div>
         </div>
       </section>
 
@@ -262,10 +240,10 @@ export default function LaunchLab() {
             1 project selected per quarter.
           </h2>
           <p className="text-xl md:text-2xl text-secondary/80 font-medium">
-            Applications for Q2 2026 are open from 1 April to 10 April.
+            Applications for Q2 2026 have ended.
           </p>
-          <p className="text-base text-body-text font-medium mt-2 opacity-80">
-            Program begins shortly after selection.
+          <p className="text-base text-body-text font-medium mt-2">
+            The program starts on April 15th with the selected project.
           </p>
         </div>
       </section>
@@ -283,28 +261,19 @@ export default function LaunchLab() {
         </div>
       </section>
 
-      {/* Application Section */}
+      {/* Status Section */}
       <section id="apply" className="py-32 px-6">
         <div className="max-w-3xl mx-auto text-center flex flex-col items-center">
           <h2 className="text-4xl md:text-6xl font-extrabold text-secondary mb-6">
-            Apply for Jatin Launch Lab
+            Q2 Applications Closed
           </h2>
-          <p className="text-xl text-body-text mb-12">
-            Only serious, pre-TGE teams will be considered.
+          <p className="text-xl text-body-text mb-8">
+            Applications for the current quarter have officially ended.
           </p>
           
-          <a 
-            href="https://tally.so/r/Me5xpE"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-10 py-4 rounded-xl bg-[#00FFFF] text-secondary font-black text-xl uppercase border-[3px] border-secondary hover:-translate-y-1 hover:shadow-[0_8px_0_0_#013E48] transition-all duration-200"
-          >
-            Apply Now
-          </a>
-          
-          <p className="mt-6 text-sm text-secondary/60 font-medium uppercase tracking-widest">
-            Shortlisted teams will be contacted.
-          </p>
+          <div className="px-10 py-4 rounded-xl bg-background-light text-secondary font-black text-xl uppercase border-[3px] border-secondary/20">
+            Program Begins April 15th
+          </div>
         </div>
       </section>
 
