@@ -286,7 +286,7 @@ export default function LaunchLab() {
       </section>
 
       {/* Previous Cohort Section */}
-      <section className="py-24 px-6">
+      <section id="last-cohort" className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Heading */}
           <div className="text-center mb-16">
@@ -388,8 +388,8 @@ export default function LaunchLab() {
               <a href="#about" className="text-body-text hover:text-secondary transition-colors">About</a>
               <a href="#what-you-get" className="text-body-text hover:text-secondary transition-colors">What You Get</a>
               <a href="#criteria" className="text-body-text hover:text-secondary transition-colors">Criteria</a>
-
               <a href="#program-details" className="text-body-text hover:text-secondary transition-colors">Program Details</a>
+              <a href="#last-cohort" className="text-body-text hover:text-secondary transition-colors">Last Cohort</a>
             </div>
             <div className="flex flex-col gap-4">
               <h4 className="text-secondary font-bold uppercase tracking-wider text-sm">Socials</h4>
