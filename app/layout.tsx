@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Token Launch Strategy & Execution | Web3 Jatin",
   description: "Helping Web3 founders design and execute token launches that survive post-TGE. Strategy, listings, and liquidity planning.",
   icons: {
-    icon: '/images/Web3Jatinlogo.jpg',
+    icon: "/images/Jatin's pfp.JPG",
   },
 };
 

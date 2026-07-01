@@ -18,7 +18,7 @@ export default function Home() {
           <Link href="#hero" className="flex items-center gap-2 group cursor-pointer">
             {/* Logo: Circular */}
             <img 
-              src="/images/Web3Jatinlogo.jpg" 
+              src="/images/Jatin's pfp.JPG" 
               alt="Web3 Jatin Logo" 
               className="h-10 w-10 rounded-full object-cover group-hover:-rotate-3 transition-transform duration-300"
             />
@@ -67,7 +67,7 @@ export default function Home() {
           {/* Header */}
           <div className="flex items-center justify-between mb-12">
             <Link href="#hero" className="flex items-center gap-2" onClick={toggleMobileMenu}>
-              <img src="/images/Web3Jatinlogo.jpg" alt="Web3 Jatin Logo" className="h-8 w-8 rounded-full object-cover" />
+              <img src="/images/Jatin's pfp.JPG" alt="Web3 Jatin Logo" className="h-8 w-8 rounded-full object-cover" />
               <span className="text-secondary font-bold text-lg tracking-tight">Web3 Jatin</span>
             </Link>
             <button className="text-secondary" onClick={toggleMobileMenu}>
@@ -120,7 +120,7 @@ export default function Home() {
 </h1>
             
             <p className="text-lg md:text-xl text-body-text max-w-xl leading-relaxed">
-              I help Web3 founders design and execute token launches that survive post-TGE.
+              Helping Web3 founders become TGE-ready.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-1">
@@ -165,7 +165,7 @@ export default function Home() {
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-4xl font-semibold text-secondary leading-normal">
-            "I help Web3 founders launch tokens <span className="bg-primary/20 px-1 text-secondary">the right way</span> - smart exchange sequencing, disciplined liquidity planning, and a sustainable token structure that holds up long-term."
+            "I help Web3 founders launch tokens <span className="bg-primary/20 px-1 text-secondary">the right way</span> - strategic exchange selection, disciplined liquidity planning, and a sustainable token structure that holds up long-term."
           </h2>
           <div className="w-24 h-1 bg-secondary mx-auto mt-10 rounded-full"></div>
         </div>
@@ -614,14 +614,14 @@ I don’t push unnecessary listings or services - only strategy and execution al
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-2">
               <img 
-                src="/images/Web3Jatinlogo.jpg" 
+                src="/images/Jatin's pfp.JPG" 
                 alt="Web3 Jatin Logo" 
                 className="h-10 w-10 rounded-full object-cover"
               />
               <span className="text-secondary font-bold text-xl tracking-tight">Web3 Jatin</span>
             </div>
             <p className="text-body-text max-w-xs">
-              Designing and executing token launches that survive post-TGE.
+              Helping Web3 founders become TGE-ready.
             </p>
           </div>
           
@@ -641,6 +641,7 @@ I don’t push unnecessary listings or services - only strategy and execution al
               <Link href="https://www.linkedin.com/in/web3jatin/" target="_blank" className="text-body-text hover:text-secondary transition-colors">LinkedIn</Link>
               <Link href="https://t.me/web3jatin2" target="_blank" className="text-body-text hover:text-secondary transition-colors">Telegram</Link>
               <Link href="https://www.youtube.com/@web3jatin" target="_blank" className="text-body-text hover:text-secondary transition-colors">YouTube</Link>
+              <Link href="https://www.instagram.com/web3jatin" target="_blank" rel="noopener noreferrer" className="text-body-text hover:text-secondary transition-colors">Instagram</Link>
               <Link href="mailto:jatin@web3jatin.com" className="text-body-text hover:text-secondary transition-colors">Email</Link>
             </div>
             <div className="flex flex-col gap-4">
