@@ -28,6 +28,7 @@ export default function LaunchLab() {
             <a href="#what-you-get" className="text-sm font-semibold text-secondary/80 hover:text-secondary hover:underline decoration-primary decoration-2 underline-offset-4 transition-all">What You Get</a>
             <a href="#criteria" className="text-sm font-semibold text-secondary/80 hover:text-secondary hover:underline decoration-primary decoration-2 underline-offset-4 transition-all">Criteria</a>
             <a href="#program-details" className="text-sm font-semibold text-secondary/80 hover:text-secondary hover:underline decoration-primary decoration-2 underline-offset-4 transition-all">Program Details</a>
+            <a href="#last-cohort" className="text-sm font-semibold text-secondary/80 hover:text-secondary hover:underline decoration-primary decoration-2 underline-offset-4 transition-all">Last Cohort</a>
           </div>
           
           <div className="flex items-center gap-4">
@@ -77,6 +78,7 @@ export default function LaunchLab() {
             <a href="#what-you-get" className="text-secondary hover:text-primary transition-colors" onClick={toggleMobileMenu}>What You Get</a>
             <a href="#criteria" className="text-secondary hover:text-primary transition-colors" onClick={toggleMobileMenu}>Criteria</a>
             <a href="#program-details" className="text-secondary hover:text-primary transition-colors" onClick={toggleMobileMenu}>Program Details</a>
+            <a href="#last-cohort" className="text-secondary hover:text-primary transition-colors" onClick={toggleMobileMenu}>Last Cohort</a>
           </div>
 
           {/* CTA */}
