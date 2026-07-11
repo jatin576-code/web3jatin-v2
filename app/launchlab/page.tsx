@@ -1,7 +1,8 @@
 'use client';
 import React, { useState } from 'react';
 
-export default function LaunchLab() {
+// I have renamed the component to LaunchLabPage for consistency with Next.js page conventions
+export default function LaunchLabPage() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -10,7 +11,7 @@ export default function LaunchLab() {
   
   return (
     <main className="bg-background-light text-secondary font-sans antialiased selection:bg-primary selection:text-secondary">
-      {/* Navigation */}
+      {/* Navigation - PRESERVED with button REMOVAL */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#E6F5FC]/85 backdrop-blur-md border-b border-white/50 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <a href="/" className="flex items-center gap-2 group cursor-pointer">
@@ -32,14 +33,8 @@ export default function LaunchLab() {
           </div>
           
           <div className="flex items-center gap-4">
-            <a 
-              href="https://tally.so/r/A70Lek" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="hidden md:inline-flex items-center justify-center bg-[#01E0F8] text-black font-bold text-sm px-6 py-2.5 rounded-xl hover:-translate-y-[2px] hover:shadow-[0_4px_15px_rgba(1,224,248,0.4)] hover:brightness-105 transition-all duration-200 cursor-pointer"
-            >
-              Apply Now
-            </a>
+            {/* PRESERVED: I have removed the "Apply Now" button here */}
+            
             <button 
               className="md:hidden text-secondary cursor-pointer" 
               onClick={toggleMobileMenu}
@@ -51,7 +46,7 @@ export default function LaunchLab() {
         </div>
       </nav>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu Overlay - PRESERVED with button REMOVAL */}
       <div 
         className={`fixed inset-0 bg-secondary/80 backdrop-blur-sm z-[100] transition-opacity duration-300 md:hidden ${isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
         onClick={toggleMobileMenu}
@@ -81,21 +76,11 @@ export default function LaunchLab() {
             <a href="#last-cohort" className="text-secondary hover:text-primary transition-colors" onClick={toggleMobileMenu}>Last Cohort</a>
           </div>
 
-          {/* CTA */}
-          <div className="mt-10">
-            <a 
-              href="https://tally.so/r/A70Lek" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="flex w-full items-center justify-center bg-[#01E0F8] text-black font-bold text-lg px-6 py-4 rounded-xl hover:-translate-y-[2px] hover:shadow-[0_4px_15px_rgba(1,224,248,0.4)] hover:brightness-105 transition-all duration-200 cursor-pointer"
-            >
-              Apply Now
-            </a>
-          </div>
+          {/* CTA - PRESERVED: I have removed the "Apply Now" button here */}
         </div>
       </div>
 
-      {/* Hero Section */}
+      {/* Hero Section - PRESERVED with button UPDATE */}
       <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden bg-[#EBF7FB] pt-20 px-6">
         <div className="absolute -top-32 -left-32 w-64 h-64 bg-[#00FFFF] rounded-full border-[3px] border-secondary"></div>
         <div className="absolute -top-32 -right-32 w-64 h-64 bg-[#00FFFF] rounded-full border-[3px] border-secondary"></div>
@@ -115,18 +100,17 @@ export default function LaunchLab() {
             4-week Token Launch Strategy & Execution program for Pre-TGE Web3 Projects
           </p>
           
-          <a 
-            href="https://tally.so/r/A70Lek" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="mt-4 px-10 py-4 rounded-xl bg-[#01E0F8] border-[3px] border-[#01E0F8] text-black font-black text-xl uppercase tracking-wide hover:-translate-y-[3px] hover:shadow-[0_6px_20px_rgba(1,224,248,0.4)] hover:brightness-105 transition-all duration-200 cursor-pointer inline-block"
+          {/* PRESERVED: Updated to unclickable button with "Applications for Q3 ended" text */}
+          <button 
+            disabled
+            className="mt-4 px-10 py-4 rounded-xl bg-[#01E0F8] border-[3px] border-[#01E0F8] text-black font-black text-xl uppercase tracking-wide cursor-not-allowed inline-block"
           >
-            Apply Now
-          </a>
+            Applications for Q3 ended
+          </button>
         </div>
       </section>
 
-      {/* About Section */}
+      {/* About Section - PRESERVED */}
       <section id="about" className="py-24 md:py-32 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold text-secondary mb-8">What is Jatin Launch Lab?</h2>
@@ -140,7 +124,7 @@ export default function LaunchLab() {
         </div>
       </section>
 
-      {/* What You Get Section */}
+      {/* What You Get Section - PRESERVED */}
       <section id="what-you-get" className="py-20 px-6 bg-surface border-y border-[#cde9ea]/30">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -196,7 +180,7 @@ export default function LaunchLab() {
         </div>
       </section>
 
-      {/* Who This Is For Section */}
+      {/* Who This Is For Section - PRESERVED */}
       <section id="criteria" className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -256,7 +240,7 @@ export default function LaunchLab() {
         </div>
       </section>
 
-      {/* Program Details Section */}
+      {/* Program Details Section - PRESERVED with basic text update */}
       <section id="program-details" className="py-24 px-6 border-t border-[#cde9ea]/30">
         <div className="max-w-4xl mx-auto text-center flex flex-col items-center gap-8">
           <p className="text-sm font-bold tracking-[0.2em] uppercase text-secondary/50">
@@ -266,7 +250,7 @@ export default function LaunchLab() {
             1 project selected per quarter.
           </h2>
           <p className="text-xl md:text-2xl text-secondary/80 font-medium">
-            Applications for Q3 2026 are open from 1 July – 10 July.
+            Applications for Q3 2026 were open from 1 July – 10 July.
           </p>
           <p className="text-base text-body-text font-medium mt-2">
             The program starts on July 15th with the selected project.
@@ -274,7 +258,7 @@ export default function LaunchLab() {
         </div>
       </section>
 
-      {/* Engagement Model Section */}
+      {/* Engagement Model Section - PRESERVED */}
       <section className="py-24 px-6 bg-primary/10 border-y border-primary/20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-sm font-bold tracking-[0.2em] uppercase text-secondary/60 mb-4">Engagement Model</h2>
@@ -287,7 +271,7 @@ export default function LaunchLab() {
         </div>
       </section>
 
-      {/* Previous Cohort Section */}
+      {/* Previous Cohort Section - PRESERVED */}
       <section id="last-cohort" className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Heading */}
@@ -349,24 +333,24 @@ export default function LaunchLab() {
         </div>
       </section>
 
-      {/* Status Section */}
+      {/* Status Section - PRESERVED with updates */}
       <section id="apply" className="py-32 px-6 border-t border-[#cde9ea]/30">
         <div className="max-w-3xl mx-auto text-center flex flex-col items-center">
           <h2 className="text-4xl md:text-6xl font-extrabold text-secondary mb-10">
-            Applications for Q3 2026 are open.
+            Applications for Q3 2026 are closed.
           </h2>
-          <a 
-            href="https://tally.so/r/A70Lek" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="px-10 py-4 rounded-xl bg-[#01E0F8] border-[3px] border-[#01E0F8] text-black font-black text-xl uppercase tracking-wide hover:-translate-y-[3px] hover:shadow-[0_6px_20px_rgba(1,224,248,0.4)] hover:brightness-105 transition-all duration-200 cursor-pointer inline-block"
+          
+          {/* PRESERVED: I have updated to an unclickable button with "Applications for Q3 ended" text, identical style to hero button for prominent state preservation[cite: 1] */}
+          <button 
+            disabled
+            className="px-10 py-4 rounded-xl bg-[#01E0F8] border-[3px] border-[#01E0F8] text-black font-black text-xl uppercase tracking-wide cursor-not-allowed inline-block"
           >
-            Apply Now
-          </a>
+            Applications for Q3 ended
+          </button>
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Footer - PRESERVED */}
       <footer className="bg-background-light pt-20 pb-10 px-6 border-t border-[#cde9ea]">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12 mb-16">
           <div className="flex flex-col gap-4">
